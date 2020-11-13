@@ -128,7 +128,7 @@ namespace WarThunderBetty {
                 Debug.LogError(req.error);
                 Disconnect();
                 _isConnecting = false;
-                ConnectionStatusLabel.text = "Status: Failed to connect";
+                ConnectionStatusLabel.text = $"Status: Failed to connect {req.error}";
                 yield break;
             }
 
